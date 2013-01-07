@@ -19,7 +19,8 @@ import nuke
 
 def load_data():
 
-    data_file = 'bbr_color.txt'
+    #data_file = 'bbr_color.txt'
+    data_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bbr_color.txt')
 
     fields = ('kelvin', 'kelvin_abbr', 'cmf', 'chromaticity_x', 
         'chromaticity_y', 'power', 'log_r', 'log_g', 'log_b', 'r', 
